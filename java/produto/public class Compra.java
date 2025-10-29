@@ -2,7 +2,7 @@ package compra;
 
 import java.util.Scanner;
 import java.util.Locale;
-import Produto.produto;
+import Produto.Produto;
 
 public class Compra{
 
@@ -85,3 +85,4 @@ public class Compra{
     }
 
 }
+
