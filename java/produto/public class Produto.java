@@ -1,12 +1,12 @@
-package produto;
+package Produto;
 
-public class Produto {
+public class produto {
     private String nome;
     private double preco;
     private int quantidade;
     private double valor;
 
-    public Produto(String nome, double preco, int quantidade){
+    public produto(String nome, double preco, int quantidade){
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
@@ -48,7 +48,4 @@ public class Produto {
         System.out.println("O valor total da compra foi de R$" + this.valor);
     }
 
-    public void showDetails(){
-
-    }
 }
