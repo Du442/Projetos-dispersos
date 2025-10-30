@@ -1,0 +1,21 @@
+
+package Model;
+
+public class Model {
+    
+    
+    public String nome ;
+    public int idade ;
+    public double altura;
+
+    public void falar(){
+
+    System.out.println(nome + " Frase aleatoria");
+
+    }
+
+    public void fazerAniversario(){
+        idade++;
+        System.out.println(nome + " fez aniversario! nova idade: " + idade);
+    }  
+}
