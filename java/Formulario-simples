@@ -1,0 +1,55 @@
+package principal;
+
+import java.util.Scanner;
+import Model.Model;
+import java.util.Locale;
+
+public class Principal {
+    
+    public static void main(String[]args){
+        
+        Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Model x = new Model();
+        
+        System.out.println("Digite seu nome: ");
+        x.nome = sc.nextLine();
+        System.out.println("Digite sua idade: ");
+        x.idade = sc.nextInt();
+        System.out.println("Digite sua altura: ");
+        x.altura = sc.nextDouble();
+        
+        sc.nextLine();
+        
+        System.out.println("Deseja falar? s/n");
+        String resposta = sc.nextLine();
+        
+        if(!resposta.isEmpty()){
+            char primeiraLetra = Character.toLowerCase(resposta.charAt(0));
+            if(primeiraLetra == 's'){
+                x.falar();
+            }else {
+                System.out.println("Não fala ent");
+            }
+        }else{
+            System.out.println("Opção invalida!");
+        }
+        
+        System.out.println("Deseja fazer aniversario? s/n");
+        String resposta2 = sc.nextLine();
+        
+        if(!resposta.isEmpty()){
+            char pLetra = Character.toLowerCase(resposta2.charAt(0));
+            if(pLetra == 's'){
+                x.fazerAniversario();
+            }else{
+                System.out.println("Não quis");
+            }
+        }else{
+            System.out.println("Opção invalida");
+        }
+        
+        sc.close();
+    }
+    
+}
