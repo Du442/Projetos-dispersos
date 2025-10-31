@@ -1,0 +1,22 @@
+package model;
+
+public class Funcionario{
+
+    protected String name;
+    protected double salario;
+
+    public Funcionario(String name, double salario){
+
+        this.name = name;
+        this.salario = salario;
+
+    }
+
+    public void exibirDados(String name, double salario){
+        
+        System.out.println("Nome: " + name + "\n" +
+        "Salario: " + salario);
+
+    }
+
+}

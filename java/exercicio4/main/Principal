@@ -1,0 +1,18 @@
+import model.*;
+
+public class Principal{
+
+    public static void main(String[]args){
+
+        Carro car = new Carro("Toyota","Corolla XEi", 2022, 4);
+
+        System.out.println("Marca " + car.getMarca());
+        System.out.println("Modelo " + car.getModelo());
+        System.out.println("Ano " + car.getAno());
+        System.out.println("Numero de portas " + car.getNumeroPortas());
+
+        car.exibirInfo();
+
+    }
+
+}
