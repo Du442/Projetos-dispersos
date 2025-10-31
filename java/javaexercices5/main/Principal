@@ -1,0 +1,30 @@
+package main;
+
+import model.*;
+import java.util.Scanner;
+
+public class Principal {
+
+    public static void main(String[]args){
+
+        Scanner sc = new Scanner(System.in);
+        Circulo circulo = new Circulo();
+        Retangulo retangulo = new Retangulo();
+
+        System.out.println("Digite qual o raio do seu circulo: ");
+        circulo.setRaio = sc.nextDouble();
+
+        circulo.calcularArea();
+
+        System.out.println("Digite qual a base do seu retangulo: ");
+        retangulo.setBase(sc.nextDouble());
+
+        System.out.println("Digite qual a altura do seu retangulo: ");
+        retangulo.setAltura(sc.nextDouble());
+        retangulo.calcularArea();
+
+        sc.close();
+
+    }
+
+}
